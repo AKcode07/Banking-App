@@ -1,12 +1,12 @@
 import HeaderBox from '@/components/HeaderBox'
 // import RecentTransactions from '@/components/RecentTransactions';
-// import RightSidebar from '@/components/RightSidebar';
+import RightSidebar from '@/components/RightSidebar';
 import TotalBalanceBox from '@/components/TotalBalanceBox';
 // import { getAccount, getAccounts } from '@/lib/actions/bank.actions';
 // import { getLoggedInUser } from '@/lib/actions/user.actions';
 
 const Home = () => {
-  const loggedIn = {firstName: 'Ashwin'};
+  const loggedIn = {firstName: 'Ashwin', lastName: 'Kumavat', email: 'abc@gmail.com'};
 
   return (
     <section className="home">
@@ -34,11 +34,11 @@ const Home = () => {
         /> */}
       </div>
 
-      {/* <RightSidebar 
+      <RightSidebar 
         user={loggedIn}
-        transactions={account?.transactions}
-        banks={accountsData?.slice(0, 2)}
-      /> */}
+        transactions={[]}
+        banks={[{}, {}]}
+      />
     </section>
   )
 }
